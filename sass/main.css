@@ -1,3 +1,8 @@
 body {
-  background-color: #1f1e61;
-  color: #fdfb87; }
+  background-color: #15143b;
+  color: #fdfb87;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: medium; }
+  body .homepage-header {
+    font-size: 0.5em; }
