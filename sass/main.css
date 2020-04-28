@@ -1,9 +1,22 @@
 body {
-  background-color: #15143b;
-  color: #fdfb87;
+  background-color: #ffeeee;
+  color: #15143b;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
-  font-size: medium; }
-  body .homepage-header {
+  font-size: 1rem; }
+  body .homepage-main {
+    text-align: center;
+    font-size: inherit;
     font-weight: 200;
-    font-size: 0.5em; }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    body .homepage-main h1 {
+      font-size: 4rem;
+      font-weight: 200; }
+    body .homepage-main h2 {
+      font-size: 3.3rem;
+      font-weight: 200; }
+    body .homepage-main .highlight {
+      color: #000000;
+      font-family: 'Merriweather', serif; }
