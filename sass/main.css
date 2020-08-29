@@ -17,7 +17,25 @@ body {
   color: #15143b;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin: 0; }
+  body .header {
+    background-color: #15143b;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    height: 2rem; }
+    body .header li {
+      float: left;
+      top: 50%;
+      transform: translateY(-50%);
+      list-style: none; }
+      body .header li a {
+        color: #ffeeee;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 2rem;
+        padding: 12px; }
   body .homepage-main {
     margin: 0 3em;
     text-align: left;
