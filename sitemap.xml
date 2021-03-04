@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.samgreening.com/portfolio/</loc>
+    <loc>https://www.samgreening.com/works/</loc>
   </url>
   
   <url>
@@ -16,10 +16,6 @@
   </url>
   
   <url>
-    <loc>https://www.samgreening.com/portfolio/</loc>
-  </url>
-  
-  <url>
     <loc>https://www.samgreening.com/</loc>
   </url>
   
@@ -28,7 +24,11 @@
   </url>
   
   <url>
-    <loc>https://www.samgreening.com/portfolio/the-song-of-los/</loc>
+    <loc>https://www.samgreening.com/works/the-song-of-los/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.samgreening.com/works/</loc>
   </url>
   
 </urlset>
