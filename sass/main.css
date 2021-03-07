@@ -16,13 +16,32 @@
   --main-bg-color: #fff8f0;
   --main-body-grey: #43434b; }
 
+.footer {
+  background-color: var(--main-body-grey);
+  color: var(--main-bg-color);
+  flex-shrink: 0;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer a {
+    color: var(--main-bg-color);
+    font-weight: 200;
+    text-decoration: none; }
+
+html {
+  height: 100%; }
+
 body {
   background-color: var(--main-bg-color);
   color: var(--main-body-grey);
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  margin: 0; }
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
   body .header {
     margin: 2rem auto 2rem auto;
     width: 950px;
@@ -71,7 +90,8 @@ main {
   max-width: 90%;
   opacity: 0;
   -webkit-animation: fadeInUp 1s ease-out 0s forwards;
-  animation: fadeInUp 1s ease-out 0s forwards; }
+  animation: fadeInUp 1s ease-out 0s forwards;
+  flex: 1 0 auto; }
   main h1 {
     font-family: 'Merriweather', serif;
     font-size: 3rem;
@@ -83,10 +103,51 @@ main {
     font-family: 'Merriweather', serif;
     border-bottom: solid; }
 
+form {
+  margin: 0 auto;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em; }
+  form div {
+    margin-top: 1em; }
+  form label {
+    display: inline-block;
+    width: 100px;
+    text-align: left; }
+  form input, form textarea {
+    /* To make sure that all text fields have the same font settings */
+    /* By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    /* Match form field borders */
+    border: 1px solid #999; }
+  form input:focus,
+  form textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000; }
+  form textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+    /* Provide space to type some text */
+    height: 5em; }
+  form button {
+    /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+    margin-left: .5em; }
+  form input:invalid {
+    box-shadow: 0 0 5px 1px #e77; }
+  form input:focus:invalid {
+    box-shadow: none; }
+  form textarea:invalid {
+    box-shadow: 0 0 5px 1px #e77; }
+  form textarea:focus:invalid {
+    box-shadow: none; }
+
 .homepage-main {
   text-align: left;
-  font-size: inherit;
-  font-weight: 200; }
+  font-size: inherit; }
   .homepage-main h1 {
     font-size: 4rem;
     font-weight: 200; }
